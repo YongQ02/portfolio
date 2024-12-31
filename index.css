@@ -122,4 +122,63 @@ body {
   .footer-links a:hover {
     text-decoration: underline;
   }
+
+  @media (max-width: 768px) {
+    /* 缩小导航栏链接间距 */
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links li {
+      margin: 5px 0;
+    }
+  
+    .header {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .mylogo {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .site-title {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* 调整标题和文字的大小 */
+    .main-text {
+      font-size: 2rem;
+    }
+  
+    .sub-text {
+      font-size: 1rem;
+    }
+  
+    /* 缩小背景图区域 */
+    .hero {
+      padding: 20px;
+    }
+  
+    /* 调整页脚链接布局 */
+    .footer-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-icon {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .footer-links a {
+      font-size: 16px;
+    }
+  }
   
